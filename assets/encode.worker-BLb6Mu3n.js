@@ -1,0 +1,1 @@
+const e=(e,t=[])=>self.postMessage(e,t);self.onmessage=async t=>{let{id:n,format:r,data:i,quality:a,speed:o}=t.data;try{let t;if(r===`avif`){let{default:e}=await import(`./encode-B3854btX.js`);t=await e(i,{quality:a,speed:o})}else{let{default:e}=await import(`./encode-BVI_Htwn.js`);t=await e(i,{quality:a})}e({id:n,bytes:t},[t])}catch(t){e({id:n,error:String(t?.message||t)})}};
