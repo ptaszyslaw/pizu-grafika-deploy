@@ -1,4 +1,4 @@
-# Pizu Grafika — Apache config for shared hosting
+# PizuGrafika — Apache config for shared hosting
 
 # Force HTTPS
 <IfModule mod_rewrite.c>
