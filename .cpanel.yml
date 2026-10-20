@@ -4,4 +4,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=$HOME/public_html/grafika/
     - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R .htaccess assets favicon.svg index.html kadruj-zdjecie kod-qr konwertuj-zdjecia robots.txt settings-init.js sitemap.xml zaslon-i-znak-wodny $DEPLOYPATH
+    - /bin/cp -R .htaccess 404.css 404.html assets favicon.svg index.html kadruj-zdjecie kod-qr konwertuj-zdjecia og-image.png robots.txt settings-init.js sitemap.xml zaslon-i-znak-wodny $DEPLOYPATH
