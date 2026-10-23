@@ -29,10 +29,29 @@
     <!-- applies saved theme / contrast / text size before the first paint -->
     <script src="./settings-init.js"></script>
     <title>Kadruj zdjęcie i zmień rozmiar — także do dowodu | PizuGrafika</title>
-    <script type="module" crossorigin src="./assets/index-D2YXxZQF.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DiypQRXG.css">
+    <script type="module" crossorigin src="./assets/index-BCA24Q3G.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D2QOrKqq.css">
+    <script type="application/ld+json" data-page-schema>{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Kadruj zdjęcie i zmień rozmiar","description":"Kadrujesz zdjęcie w wybranych proporcjach albo do gotowego rozmiaru, obracasz je i odbijasz. Wszystko dzieje się w przeglądarce — zdjęcie nie opuszcza Twojego urządzenia.","applicationCategory":"MultimediaApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://grafika.pizu.pl/kadruj-zdjecie/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy przygotuję tu zdjęcie do dowodu lub paszportu?","acceptedAnswer":{"@type":"Answer","text":"Tak, jest gotowy rozmiar zdjęcia do dokumentów. Narzędzie przycina zdjęcie do właściwego formatu — samo zdjęcie musi spełniać wymagania urzędu (tło, oświetlenie, ujęcie twarzy)."}},{"@type":"Question","name":"Czy mogę zmienić orientację kadru?","acceptedAnswer":{"@type":"Answer","text":"Tak — proporcje przełączysz między poziomymi a pionowymi, np. 4:3 i 3:4."}},{"@type":"Question","name":"Czy zdjęcie trafia na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Kadrowanie i zapis odbywają się w Twojej przeglądarce."}}]}]}</script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!-- static-page:start -->
+<div class="flex flex-col min-h-screen bg-app">
+    <pizu-header site="grafika" tool="kadruj-zdjecie" settings=""></pizu-header>
+    <main id="main" tabindex="-1" class="flex-1 focus:outline-none"><div class="max-w-5xl mx-auto px-4 md:px-6 pt-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crop" aria-hidden="true"><path d="M6 2v14a2 2 0 0 0 2 2h14"></path><path d="M18 22V8a2 2 0 0 0-2-2H2"></path></svg></div>
+        <div><h1 class="text-xl font-bold text-ink">Kadruj zdjęcie i zmień rozmiar</h1><p class="text-sm text-gray-500">Wytnij fragment, obróć lub odbij zdjęcie i zapisz je w dokładnych wymiarach.</p></div>
+      </div>
+    </div>
+    <section aria-labelledby="info-crop" class="max-w-3xl mx-auto px-4 sm:px-6 pt-4 pb-12 text-sm text-gray-600 leading-relaxed">
+    <h2 id="info-crop" class="text-lg font-bold text-ink">Jak to działa</h2>
+    <p class="mt-2">Kadrujesz zdjęcie w wybranych proporcjach albo do gotowego rozmiaru, obracasz je i odbijasz. Wszystko dzieje się w przeglądarce — zdjęcie nie opuszcza Twojego urządzenia.</p>
+    <ol class="mt-3 space-y-1.5 list-decimal pl-5"><li>Wczytaj zdjęcie.</li><li>Wybierz proporcje (np. 4:3, 16:9, A4) albo gotowy rozmiar: post lub relacja w mediach społecznościowych, miniatura YouTube, odbitka 10 × 15 albo zdjęcie do dowodu lub paszportu.</li><li>Ustaw kadr, a w razie potrzeby obróć lub odbij zdjęcie.</li><li>Zapisz wynik w wybranym formacie.</li></ol>
+    <h2 class="mt-8 text-lg font-bold text-ink">Pytania i odpowiedzi</h2>
+    <dl class="mt-2 divide-y divide-gray-200"><div class="py-3"><dt class="font-semibold text-ink">Czy przygotuję tu zdjęcie do dowodu lub paszportu?</dt><dd class="mt-1">Tak, jest gotowy rozmiar zdjęcia do dokumentów. Narzędzie przycina zdjęcie do właściwego formatu — samo zdjęcie musi spełniać wymagania urzędu (tło, oświetlenie, ujęcie twarzy).</dd></div><div class="py-3"><dt class="font-semibold text-ink">Czy mogę zmienić orientację kadru?</dt><dd class="mt-1">Tak — proporcje przełączysz między poziomymi a pionowymi, np. 4:3 i 3:4.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Czy zdjęcie trafia na serwer?</dt><dd class="mt-1">Nie. Kadrowanie i zapis odbywają się w Twojej przeglądarce.</dd></div></dl>
+  </section></main>
+    <pizu-footer product="PizuGrafika" version="0.5.3"></pizu-footer>
+  </div>
+<!-- static-page:end --></div>
   </body>
 </html>

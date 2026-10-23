@@ -29,10 +29,29 @@
     <!-- applies saved theme / contrast / text size before the first paint -->
     <script src="./settings-init.js"></script>
     <title>Zamaż twarz lub dane na zdjęciu, dodaj znak wodny | PizuGrafika</title>
-    <script type="module" crossorigin src="./assets/index-D2YXxZQF.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DiypQRXG.css">
+    <script type="module" crossorigin src="./assets/index-BCA24Q3G.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D2QOrKqq.css">
+    <script type="application/ld+json" data-page-schema>{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Zasłoń fragmenty zdjęcia i dodaj znak wodny","description":"Zasłaniasz na zdjęciu to, czego nie chcesz pokazywać — twarze, tablice rejestracyjne, dane z dokumentów — i podpisujesz je znakiem wodnym. Zdjęcie zostaje na Twoim urządzeniu.","applicationCategory":"MultimediaApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://grafika.pizu.pl/zaslon-i-znak-wodny/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy zasłonięty fragment da się odzyskać z zapisanego pliku?","acceptedAnswer":{"@type":"Answer","text":"Nie z samego pliku: zapisany obraz powstaje od nowa, a zasłonięte piksele zastępuje efekt. Przy tekście, np. numerach dokumentów, najpewniejsze jest zamalowanie — mocno powiększone rozmycie czy pikselizacja bywają czytelne."}},{"@type":"Question","name":"Jak dodać znak wodny na zdjęcie?","acceptedAnswer":{"@type":"Answer","text":"Wpisz tekst, wybierz wielkość, przezroczystość i położenie — albo powtórz napis ukośnie na całym zdjęciu, żeby trudniej było go usunąć."}},{"@type":"Question","name":"Czy zdjęcie trafia na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Zasłanianie i znak wodny są dodawane w Twojej przeglądarce."}}]}]}</script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!-- static-page:start -->
+<div class="flex flex-col min-h-screen bg-app">
+    <pizu-header site="grafika" tool="zaslon-i-znak-wodny" settings=""></pizu-header>
+    <main id="main" tabindex="-1" class="flex-1 focus:outline-none"><div class="max-w-5xl mx-auto px-4 md:px-6 pt-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-teal-100 text-teal-700 rounded-xl flex items-center justify-center shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-off" aria-hidden="true"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"></path><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"></path><path d="m2 2 20 20"></path></svg></div>
+        <div><h1 class="text-xl font-bold text-ink">Zasłoń fragmenty zdjęcia i dodaj znak wodny</h1><p class="text-sm text-gray-500">Ukryj twarze, tablice rejestracyjne lub dane osobowe i podpisz zdjęcie.</p></div>
+      </div>
+    </div>
+    <section aria-labelledby="info-redact" class="max-w-3xl mx-auto px-4 sm:px-6 pt-4 pb-12 text-sm text-gray-600 leading-relaxed">
+    <h2 id="info-redact" class="text-lg font-bold text-ink">Jak to działa</h2>
+    <p class="mt-2">Zasłaniasz na zdjęciu to, czego nie chcesz pokazywać — twarze, tablice rejestracyjne, dane z dokumentów — i podpisujesz je znakiem wodnym. Zdjęcie zostaje na Twoim urządzeniu.</p>
+    <ol class="mt-3 space-y-1.5 list-decimal pl-5"><li>Wczytaj zdjęcie.</li><li>Zaznacz obszary do zasłonięcia i wybierz sposób: pikselizacja, rozmycie albo zamalowanie.</li><li>Jeśli chcesz, dodaj napis jako znak wodny — w wybranym miejscu albo powtórzony ukośnie na całym zdjęciu.</li><li>Zapisz zdjęcie.</li></ol>
+    <h2 class="mt-8 text-lg font-bold text-ink">Pytania i odpowiedzi</h2>
+    <dl class="mt-2 divide-y divide-gray-200"><div class="py-3"><dt class="font-semibold text-ink">Czy zasłonięty fragment da się odzyskać z zapisanego pliku?</dt><dd class="mt-1">Nie z samego pliku: zapisany obraz powstaje od nowa, a zasłonięte piksele zastępuje efekt. Przy tekście, np. numerach dokumentów, najpewniejsze jest zamalowanie — mocno powiększone rozmycie czy pikselizacja bywają czytelne.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Jak dodać znak wodny na zdjęcie?</dt><dd class="mt-1">Wpisz tekst, wybierz wielkość, przezroczystość i położenie — albo powtórz napis ukośnie na całym zdjęciu, żeby trudniej było go usunąć.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Czy zdjęcie trafia na serwer?</dt><dd class="mt-1">Nie. Zasłanianie i znak wodny są dodawane w Twojej przeglądarce.</dd></div></dl>
+  </section></main>
+    <pizu-footer product="PizuGrafika" version="0.5.3"></pizu-footer>
+  </div>
+<!-- static-page:end --></div>
   </body>
 </html>

@@ -29,10 +29,72 @@
     <!-- applies saved theme / contrast / text size before the first paint -->
     <script src="./settings-init.js"></script>
     <title>PizuGrafika — darmowe narzędzia do zdjęć i grafiki w przeglądarce</title>
-    <script type="module" crossorigin src="./assets/index-D2YXxZQF.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DiypQRXG.css">
+    <script type="module" crossorigin src="./assets/index-BCA24Q3G.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D2QOrKqq.css">
+    <script type="application/ld+json" data-page-schema>{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy moje pliki są wysyłane na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Zdjęcia są przetwarzane w Twojej przeglądarce, na Twoim urządzeniu. Kody QR również powstają lokalnie."}},{"@type":"Question","name":"Czy muszę instalować aplikację lub zakładać konto?","acceptedAnswer":{"@type":"Answer","text":"Nie. Wystarczy przeglądarka na komputerze lub telefonie. Narzędzia są dostępne bez konta i bez opłat."}},{"@type":"Question","name":"Czy otworzę zdjęcia HEIC z iPhone’a?","acceptedAnswer":{"@type":"Answer","text":"Tak. Wczytaj je w narzędziu do konwersji i zapisz jako JPG, PNG, WebP lub AVIF."}}]}]}</script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!-- static-page:start -->
+<div class="flex flex-col min-h-screen bg-app">
+    <pizu-header site="grafika" tool="" settings=""></pizu-header>
+    <main id="main" tabindex="-1" class="flex-1 focus:outline-none"><div class="max-w-5xl mx-auto px-4 md:px-6 py-8 md:py-12 space-y-8">
+      <div class="text-center space-y-3">
+        <h1 class="text-3xl md:text-4xl font-bold text-ink">Narzędzia do zdjęć i grafiki, które <span class="text-brand">nie wysyłają</span> Twoich plików</h1>
+        <p class="text-gray-500 max-w-2xl mx-auto">Zmień format (także zdjęć HEIC z iPhone’a), zmniejsz rozmiar, wykadruj, zasłoń prywatne fragmenty, przygotuj zdjęcia do wysłania lub na stronę i utwórz kod QR — wszystko w Twojej przeglądarce.</p>
+      </div>
+      <div class="grid gap-4 md:grid-cols-2"><a href="/konwertuj-zdjecia/" class="group block text-left cursor-pointer bg-surface rounded-2xl border border-gray-200 shadow-sm p-5 hover:border-red-200 hover:shadow-md transition-all">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-red-100 text-red-700 rounded-xl flex items-center justify-center shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-images" aria-hidden="true"><path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16"></path><path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2"></path><circle cx="13" cy="7" r="1" fill="currentColor"></circle><rect x="8" y="2" width="14" height="14" rx="2"></rect></svg></div>
+          <div class="min-w-0 flex-1">
+            <p class="text-base font-bold text-ink flex items-center gap-2">Konwertuj i kompresuj<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-brand transition-colors" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></p>
+            <p class="text-sm text-gray-500 mt-1 leading-relaxed">Zamień zdjęcia na JPG, WebP, AVIF lub PNG, zmniejsz ich rozmiar i wymiary — wiele plików naraz, z pobraniem w ZIP.</p>
+          </div>
+        </div>
+      </a><a href="/kadruj-zdjecie/" class="group block text-left cursor-pointer bg-surface rounded-2xl border border-gray-200 shadow-sm p-5 hover:border-red-200 hover:shadow-md transition-all">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crop" aria-hidden="true"><path d="M6 2v14a2 2 0 0 0 2 2h14"></path><path d="M18 22V8a2 2 0 0 0-2-2H2"></path></svg></div>
+          <div class="min-w-0 flex-1">
+            <p class="text-base font-bold text-ink flex items-center gap-2">Kadruj i zmień rozmiar<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-brand transition-colors" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></p>
+            <p class="text-sm text-gray-500 mt-1 leading-relaxed">Wytnij fragment w wybranych proporcjach lub gotowym rozmiarze (np. Instagram, odbitka 10 × 15, zdjęcie do dowodu), obróć lub odbij zdjęcie.</p>
+          </div>
+        </div>
+      </a><a href="/zaslon-i-znak-wodny/" class="group block text-left cursor-pointer bg-surface rounded-2xl border border-gray-200 shadow-sm p-5 hover:border-red-200 hover:shadow-md transition-all">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-teal-100 text-teal-700 rounded-xl flex items-center justify-center shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye-off" aria-hidden="true"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"></path><path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path><path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"></path><path d="m2 2 20 20"></path></svg></div>
+          <div class="min-w-0 flex-1">
+            <p class="text-base font-bold text-ink flex items-center gap-2">Zasłoń i dodaj znak wodny<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-brand transition-colors" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></p>
+            <p class="text-sm text-gray-500 mt-1 leading-relaxed">Rozmyj, spikselizuj lub zamaluj twarze, tablice rejestracyjne i dane osobowe, a potem podpisz zdjęcie znakiem wodnym.</p>
+          </div>
+        </div>
+      </a><a href="/kod-qr/" class="group block text-left cursor-pointer bg-surface rounded-2xl border border-gray-200 shadow-sm p-5 hover:border-red-200 hover:shadow-md transition-all">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-qr-code" aria-hidden="true"><rect width="5" height="5" x="3" y="3" rx="1"></rect><rect width="5" height="5" x="16" y="3" rx="1"></rect><rect width="5" height="5" x="3" y="16" rx="1"></rect><path d="M21 16h-3a2 2 0 0 0-2 2v3"></path><path d="M21 21v.01"></path><path d="M12 7v3a2 2 0 0 1-2 2H7"></path><path d="M3 12h.01"></path><path d="M12 3h.01"></path><path d="M12 16v.01"></path><path d="M16 12h1"></path><path d="M21 12v.01"></path><path d="M12 21v-1"></path></svg></div>
+          <div class="min-w-0 flex-1">
+            <p class="text-base font-bold text-ink flex items-center gap-2">Utwórz kod QR<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-gray-300 group-hover:text-brand transition-colors" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></p>
+            <p class="text-sm text-gray-500 mt-1 leading-relaxed">Adres strony, tekst, sieć Wi-Fi, e-mail, telefon, SMS lub dane do przelewu. Kod statyczny — bez przekierowań, liczenia skanów i daty ważności. PNG lub SVG.</p>
+          </div>
+        </div>
+      </a></div>
+      <div class="bg-surface rounded-2xl border border-gray-200 shadow-sm p-5 grid gap-5 md:grid-cols-3"><div class="flex gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-gray-400 shrink-0 mt-0.5" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+        <div><p class="text-sm font-semibold text-ink">Prywatnie</p><p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Zdjęcia są przetwarzane na Twoim urządzeniu i nigdzie nie są wysyłane. Metadane, np. lokalizacja GPS, nie trafiają do zapisanych plików — przed zapisem zobaczysz, co zawierał oryginał.</p></div>
+      </div><div class="flex gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-gray-400 shrink-0 mt-0.5" aria-hidden="true"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"></path></svg>
+        <div><p class="text-sm font-semibold text-ink">Szybko</p><p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Wiele plików naraz, bez kolejek i limitów. Wyniki pobierzesz pojedynczo albo w jednym pliku ZIP.</p></div>
+      </div><div class="flex gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone text-gray-400 shrink-0 mt-0.5" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>
+        <div><p class="text-sm font-semibold text-ink">Bez instalacji</p><p class="text-sm text-gray-500 mt-0.5 leading-relaxed">Bez konta, bez opłat i bez reklam. Wystarczy przeglądarka — na komputerze lub telefonie.</p></div>
+      </div></div>
+      <section aria-labelledby="info-home" class="max-w-3xl mx-auto px-4 sm:px-6 pt-4 pb-12 text-sm text-gray-600 leading-relaxed">
+    <h2 id="info-home" class="text-lg font-bold text-ink">Jak to działa</h2>
+    
+    <ol class="mt-3 space-y-1.5 list-decimal pl-5"><li>Wybierz narzędzie: konwersję i kompresję zdjęć, kadrowanie, zasłanianie i znak wodny albo generator kodów QR.</li><li>Wczytaj zdjęcie i dobierz ustawienia. W generatorze kodów QR zamiast zdjęcia wpisz dane, które ma zawierać kod.</li><li>Pobierz wynik na swoje urządzenie. Po konwersji wielu zdjęć możesz pobrać je razem w pliku ZIP.</li></ol>
+    <h2 class="mt-8 text-lg font-bold text-ink">Pytania i odpowiedzi</h2>
+    <dl class="mt-2 divide-y divide-gray-200"><div class="py-3"><dt class="font-semibold text-ink">Czy moje pliki są wysyłane na serwer?</dt><dd class="mt-1">Nie. Zdjęcia są przetwarzane w Twojej przeglądarce, na Twoim urządzeniu. Kody QR również powstają lokalnie.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Czy muszę instalować aplikację lub zakładać konto?</dt><dd class="mt-1">Nie. Wystarczy przeglądarka na komputerze lub telefonie. Narzędzia są dostępne bez konta i bez opłat.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Czy otworzę zdjęcia HEIC z iPhone’a?</dt><dd class="mt-1">Tak. Wczytaj je w narzędziu do konwersji i zapisz jako JPG, PNG, WebP lub AVIF.</dd></div></dl>
+  </section>
+    </div></main>
+    <pizu-footer product="PizuGrafika" version="0.5.3"></pizu-footer>
+  </div>
+<!-- static-page:end --></div>
   </body>
 </html>
