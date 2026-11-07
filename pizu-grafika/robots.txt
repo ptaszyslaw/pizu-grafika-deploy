@@ -1,0 +1,5 @@
+# PizuGrafika — strona może być w całości indeksowana
+User-agent: *
+Allow: /
+
+Sitemap: https://grafika.pizu.pl/sitemap.xml

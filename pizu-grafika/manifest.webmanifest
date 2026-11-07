@@ -1,0 +1,98 @@
+{
+  "id": "/grafika/",
+  "name": "PizuGrafika",
+  "short_name": "PizuGrafika",
+  "description": "Darmowe narzędzia do zdjęć i grafiki działające w Twojej przeglądarce — bez wysyłania plików na serwer, także bez internetu.",
+  "lang": "pl",
+  "dir": "ltr",
+  "start_url": "/grafika/",
+  "scope": "/grafika/",
+  "display": "standalone",
+  "background_color": "#F7F7F8",
+  "theme_color": "#EF4249",
+  "categories": [
+    "photo",
+    "productivity",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/grafika/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/grafika/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/grafika/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/grafika/",
+      "accept": {
+        "image/jpeg": [
+          ".jpg",
+          ".jpeg",
+          ".jfif"
+        ],
+        "image/png": [
+          ".png"
+        ],
+        "image/webp": [
+          ".webp"
+        ],
+        "image/avif": [
+          ".avif"
+        ],
+        "image/gif": [
+          ".gif"
+        ],
+        "image/bmp": [
+          ".bmp"
+        ],
+        "image/heic": [
+          ".heic",
+          ".hif"
+        ],
+        "image/heif": [
+          ".heif"
+        ]
+      }
+    }
+  ],
+  "share_target": {
+    "action": "/grafika/udostepnij",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "images",
+          "accept": [
+            "image/*",
+            ".jpg",
+            ".jpeg",
+            ".jfif",
+            ".png",
+            ".webp",
+            ".avif",
+            ".gif",
+            ".bmp",
+            ".heic",
+            ".heif",
+            ".hif"
+          ]
+        }
+      ]
+    }
+  }
+}

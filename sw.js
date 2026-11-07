@@ -13,7 +13,7 @@
  * - A new version installs in the background and waits; the page shows „Jest nowa wersja”
  *   (lib/pwa.ts) and switches only when the visitor clicks „Odśwież” (or closes every tab).
  */
-const BUILD = {"app":"0.6.0","version":"44d3cfd85c70","hashLength":16,"pages":["/","/kadruj-zdjecie/","/kod-qr/","/konwertuj-zdjecia/","/zaslon-i-znak-wodny/"],"offlinePage":"/404.html","precache":[["/","9deea38511694524"],["/kadruj-zdjecie/","bb87517a30da8993"],["/kod-qr/","03da4869a048fdde"],["/konwertuj-zdjecia/","62aa9e3d9fb1fbb9"],["/zaslon-i-znak-wodny/","8eaf98b5bc4cc98c"],["/favicon.svg","3187206ad882a731"],["/settings-init.js","b2ed895815a64dfb"],["/404.html","0f5b351e38f1d755"],["/404.css","3c181cf453dbda73"],["/manifest.webmanifest","d108288bac3544fb"],["/icon-192.png","fcc3189a34a48e40"],["/icon-512.png","354e5890b37fff91"],["/icon-maskable-512.png","3276eca901ad3be0"],["/apple-touch-icon.png","9a3cc75c02ac51c9"],["/assets/ConvertImages-BtMUINjk.js","ecd82beff9e4e68e"],["/assets/CropResize-EcnRbcQG.js","8afbc5f754fc3173"],["/assets/QrCode-fsfpubEk.js","2dd3d8db8ea96eac"],["/assets/RedactWatermark-Dmbwt-jy.js","c28466cb5f2c849e"],["/assets/avif_enc-4t6I8W1F.js","283dd29dbdc0c027"],["/assets/avif_enc-Co4TcJko.wasm","d9f2a95164362af4"],["/assets/crop-DsM0y31v.js","12e8acd8f304e5be"],["/assets/encode-B3854btX.js","261ff70f2323b149"],["/assets/encode-BVI_Htwn.js","4189a8495d1191ec"],["/assets/encode.worker-BLb6Mu3n.js","ae4bd553f56d5d0b"],["/assets/esm-mZAPAzZp.js","8e98ae64583369ad"],["/assets/files-DI2t9JQK.js","38bc9d4f41b390bc"],["/assets/full.esm-DF3YPjgv.js","fea7e52bfc88bd15"],["/assets/heic.worker-BZORov6e.js","86e9683236585f05"],["/assets/index-AID13YEX.css","67f2fbf6fc5b75a5"],["/assets/index-D-NtiyNd.js","f7aa72325d09acd9"],["/assets/libheif-BfiPCEgt.wasm","184d3d20f8323877"],["/assets/licenses-Ddo0_Poz.js","c6a74a73483b6eb5"],["/assets/metadata-DpE7X1mi.js","fb10ec2250910f9e"],["/assets/triangle-alert-DP-Btyz5.js","3c015ba07360598f"],["/assets/webp_enc-BpZvKflB.wasm","b6085bb6702f144e"],["/assets/webp_enc-C2MdtjXf.js","73c8003066b9bb83"],["/assets/webp_enc_simd-CFvKQ_80.wasm","39c279269ec1163b"],["/assets/webp_enc_simd-CUzUNlRG.js","0a906366747d88d5"]],"lazy":[{"cache":"pizugrafika-avif-mt-0bcba7d2e899","prefix":"/assets/avif_enc_mt"}],"shareAction":"/udostepnij","shareField":"images"}
+const BUILD = {"app":"0.6.1","version":"344beccc5ba4","hashLength":16,"base":"/","pages":["/","/kadruj-zdjecie/","/kod-qr/","/konwertuj-zdjecia/","/zaslon-i-znak-wodny/"],"offlinePage":"/404.html","precache":[["/","116948bffaaf08a6"],["/kadruj-zdjecie/","46c4e81e26b8bd63"],["/kod-qr/","96ac0f9f729cbd5d"],["/konwertuj-zdjecia/","4fa5df2ce9ff63fe"],["/zaslon-i-znak-wodny/","fcd286301b26e87e"],["/favicon.svg","3187206ad882a731"],["/settings-init.js","09127e0a65527d4b"],["/404.html","00767e644315f8c4"],["/404.css","3c181cf453dbda73"],["/manifest.webmanifest","1e857bcadb8a56dd"],["/icon-192.png","fcc3189a34a48e40"],["/icon-512.png","354e5890b37fff91"],["/icon-maskable-512.png","3276eca901ad3be0"],["/apple-touch-icon.png","9a3cc75c02ac51c9"],["/assets/ConvertImages-Cnft8pVP.js","d82a3eff01f83653"],["/assets/CropResize-EvuvBt0a.js","16d7f7d528911a92"],["/assets/QrCode-KpLh0ROa.js","3df3f05686558baf"],["/assets/RedactWatermark-xLGkoYmF.js","c390a8cbf83eef03"],["/assets/avif_enc-Co4TcJko.wasm","d9f2a95164362af4"],["/assets/avif_enc-DLkI1F_w.js","b4132c6c8177dace"],["/assets/crop-CnF4MJjW.js","c35e988d8730dc2a"],["/assets/encode-BcwCNeqA.js","7336c8a978e3e88c"],["/assets/encode-CK9W4au8.js","84db4da5bdead441"],["/assets/encode.worker-C7Q6uPlH.js","b1b30b49aa4e3368"],["/assets/esm-mZAPAzZp.js","8e98ae64583369ad"],["/assets/files-CKX3htKe.js","81f5a58daa5fca9b"],["/assets/full.esm-CbfXZNFs.js","f3d1838671f0a60e"],["/assets/heic.worker-D4xMClVi.js","b54134975c23e131"],["/assets/index-AID13YEX.css","67f2fbf6fc5b75a5"],["/assets/index-Cd_SikdI.js","40a77f67775eac2b"],["/assets/libheif-BfiPCEgt.wasm","184d3d20f8323877"],["/assets/licenses-Ddo0_Poz.js","c6a74a73483b6eb5"],["/assets/metadata-Cv3oSiRa.js","5fcdca44563a71b8"],["/assets/triangle-alert-BNSoeBN6.js","134999f7f792f604"],["/assets/webp_enc-BpZvKflB.wasm","b6085bb6702f144e"],["/assets/webp_enc-XbVNZKAM.js","ad901a4c1e43deb5"],["/assets/webp_enc_simd-CFvKQ_80.wasm","39c279269ec1163b"],["/assets/webp_enc_simd-Djp5481M.js","5071a43bda7cfc28"]],"lazy":[{"cache":"pizugrafika-avif-mt-6250c7adbabc","prefix":"/assets/avif_enc_mt"}],"shareAction":"/udostepnij","shareField":"images"}
 const APP_CACHE = `pizugrafika-app-${BUILD.version}`
 const SHARE_CACHE = 'pizugrafika-share'
 const PRECACHED = new Set(BUILD.precache.map(([path]) => path))
@@ -31,7 +31,7 @@ self.addEventListener('install', (event) => {
       await Promise.all(
         BUILD.precache.map(async ([path, hash]) => {
           // a hashed name never changes its content, so the HTTP cache may answer; the rest is revalidated
-          const response = await fetch(path, { cache: path.startsWith('/assets/') ? 'default' : 'no-cache' })
+          const response = await fetch(path, { cache: path.startsWith(BUILD.base + 'assets/') ? 'default' : 'no-cache' })
           if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`)
           const body = await response.clone().arrayBuffer()
           if ((await sha256(body)) !== hash) throw new Error(`${path}: treść inna niż w wersji ${BUILD.version}`)
@@ -114,7 +114,7 @@ async function receiveShare(request) {
     const cache = await caches.open(SHARE_CACHE)
     await Promise.all(
       files.map((file, i) =>
-        cache.put(`/udostepnione/${i}`, new Response(file, {
+        cache.put(`${BUILD.base}udostepnione/${i}`, new Response(file, {
           headers: { 'Content-Type': file.type || 'application/octet-stream', 'X-File-Name': encodeURIComponent(file.name) },
         }))
       )
@@ -122,5 +122,5 @@ async function receiveShare(request) {
   } catch (error) {
     console.error('PizuGrafika: nie udało się przyjąć udostępnionych zdjęć', error)
   }
-  return Response.redirect(`${self.location.origin}/?udostepnione`, 303)
+  return Response.redirect(`${self.location.origin}${BUILD.base}?udostepnione`, 303)
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- every address (/, /kod-qr/, …) loads files from the site root — see lib/routes.ts -->
+    <base href="/grafika/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; connect-src 'self'; base-uri 'self'; form-action 'none'"
+    />
+    <meta name="description" content="Zmień format zdjęć (także HEIC z iPhone’a) na JPG, PNG, WebP lub AVIF, zmniejsz ich rozmiar i wymiary — wiele plików naraz, w przeglądarce, bez wysyłania na serwer." />
+    <link rel="canonical" href="https://grafika.pizu.pl/konwertuj-zdjecia/" />
+    <!-- link previews: scripts/tool-pages.mjs sets og:title, og:description and og:url for every tool page;
+         the image is shared (pizu-pl: scripts/og-image-tool.html → node scripts/og-image.mjs) -->
+    <meta property="og:title" content="Konwertuj i kompresuj zdjęcia — JPG, PNG, WebP, AVIF, HEIC | PizuGrafika" />
+    <meta property="og:description" content="Zmień format zdjęć (także HEIC z iPhone’a) na JPG, PNG, WebP lub AVIF, zmniejsz ich rozmiar i wymiary — wiele plików naraz, w przeglądarce, bez wysyłania na serwer." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://grafika.pizu.pl/konwertuj-zdjecia/" />
+    <meta property="og:site_name" content="PizuGrafika" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:image" content="https://grafika.pizu.pl/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Ptak Pizu i napis: PizuGrafika — narzędzia, które nie wysyłają Twoich plików. Konwertuj, kadruj, kod QR." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="manifest" href="/grafika/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/grafika/apple-touch-icon.png" />
+    <!-- applies saved theme / contrast / text size before the first paint -->
+    <script src="./settings-init.js"></script>
+    <title>Konwertuj i kompresuj zdjęcia — JPG, PNG, WebP, AVIF, HEIC | PizuGrafika</title>
+    <script type="module" crossorigin src="/grafika/assets/index-CYzK84Vf.js"></script>
+    <link rel="stylesheet" crossorigin href="/grafika/assets/index-AID13YEX.css">
+    <script type="application/ld+json" data-page-schema>{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Konwertuj i kompresuj zdjęcia","description":"Zamieniasz zdjęcia na JPG, PNG, WebP lub AVIF i zmniejszasz ich rozmiar — pojedynczo albo całą paczką. Zdjęcia nie są nigdzie wysyłane: obróbka odbywa się w Twojej przeglądarce.","applicationCategory":"MultimediaApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://grafika.pizu.pl/konwertuj-zdjecia/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy zdjęcia trafiają na serwer?","acceptedAnswer":{"@type":"Answer","text":"Nie. Konwersja i kompresja odbywają się w Twojej przeglądarce, na Twoim urządzeniu."}},{"@type":"Question","name":"Jak otworzyć zdjęcie HEIC z iPhone’a na komputerze?","acceptedAnswer":{"@type":"Answer","text":"Wczytaj je tutaj i zapisz jako JPG albo PNG — działa w każdej nowoczesnej przeglądarce, także w tych, które same nie otwierają HEIC."}},{"@type":"Question","name":"Czy zapisane zdjęcie zachowa lokalizację GPS i dane aparatu?","acceptedAnswer":{"@type":"Answer","text":"Nie. Zapisany plik powstaje od nowa z samego obrazu, bez metadanych oryginału (EXIF, XMP, IPTC). Przed zapisem widać, co zawierał oryginał."}},{"@type":"Question","name":"Który format wybrać?","acceptedAnswer":{"@type":"Answer","text":"JPG do zdjęć, PNG do grafik z przezroczystością, WebP albo AVIF, gdy plik ma być jak najmniejszy — na przykład na stronę internetową."}}]}]}</script>
+  </head>
+  <body>
+    <div id="root"><!-- static-page:start -->
+<div class="flex flex-col min-h-screen bg-app">
+    <pizu-header site="grafika" tool="konwertuj-zdjecia" settings=""></pizu-header>
+    <main id="main" tabindex="-1" class="flex-1 focus:outline-none"><div class="max-w-5xl mx-auto px-4 md:px-6 pt-6">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-red-100 text-red-700 rounded-xl flex items-center justify-center shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-images" aria-hidden="true"><path d="m22 11-1.296-1.296a2.4 2.4 0 0 0-3.408 0L11 16"></path><path d="M4 8a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2"></path><circle cx="13" cy="7" r="1" fill="currentColor"></circle><rect x="8" y="2" width="14" height="14" rx="2"></rect></svg></div>
+        <div><h1 class="text-xl font-bold text-ink">Konwertuj i kompresuj zdjęcia</h1><p class="text-sm text-gray-500">Zmień format, jakość i wymiary wielu zdjęć naraz.</p></div>
+      </div>
+    </div>
+    <section aria-labelledby="info-convert" class="max-w-3xl mx-auto px-4 sm:px-6 pt-4 pb-12 text-sm text-gray-600 leading-relaxed">
+    <h2 id="info-convert" class="text-lg font-bold text-ink">Jak to działa</h2>
+    <p class="mt-2">Zamieniasz zdjęcia na JPG, PNG, WebP lub AVIF i zmniejszasz ich rozmiar — pojedynczo albo całą paczką. Zdjęcia nie są nigdzie wysyłane: obróbka odbywa się w Twojej przeglądarce.</p>
+    <ol class="mt-3 space-y-1.5 list-decimal pl-5"><li>Przeciągnij zdjęcia na stronę albo wybierz je z dysku — także HEIC z iPhone’a.</li><li>Wybierz format, jakość i — jeśli trzeba — maksymalne wymiary. Ustawienie „Przygotuj na stronę” dobiera je za Ciebie.</li><li>Pobierz pojedyncze pliki albo wszystkie naraz w paczce ZIP.</li></ol>
+    <h2 class="mt-8 text-lg font-bold text-ink">Pytania i odpowiedzi</h2>
+    <dl class="mt-2 divide-y divide-gray-200"><div class="py-3"><dt class="font-semibold text-ink">Czy zdjęcia trafiają na serwer?</dt><dd class="mt-1">Nie. Konwersja i kompresja odbywają się w Twojej przeglądarce, na Twoim urządzeniu.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Jak otworzyć zdjęcie HEIC z iPhone’a na komputerze?</dt><dd class="mt-1">Wczytaj je tutaj i zapisz jako JPG albo PNG — działa w każdej nowoczesnej przeglądarce, także w tych, które same nie otwierają HEIC.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Czy zapisane zdjęcie zachowa lokalizację GPS i dane aparatu?</dt><dd class="mt-1">Nie. Zapisany plik powstaje od nowa z samego obrazu, bez metadanych oryginału (EXIF, XMP, IPTC). Przed zapisem widać, co zawierał oryginał.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Który format wybrać?</dt><dd class="mt-1">JPG do zdjęć, PNG do grafik z przezroczystością, WebP albo AVIF, gdy plik ma być jak najmniejszy — na przykład na stronę internetową.</dd></div></dl>
+  </section></main>
+    <pizu-footer product="PizuGrafika" version="0.6.1"></pizu-footer>
+  </div>
+<!-- static-page:end --></div>
+  </body>
+</html>
