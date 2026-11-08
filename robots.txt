@@ -1,5 +1,5 @@
-# PizuGrafika — strona może być w całości indeksowana
+# PizuGrafika lives under https://pizu.pl/grafika/ — robots.txt is only read
+# from the domain root (pizu.pl), so this copy is ignored. It stays in the
+# build so nothing fetches a 404 page for it.
 User-agent: *
 Allow: /
-
-Sitemap: https://grafika.pizu.pl/sitemap.xml

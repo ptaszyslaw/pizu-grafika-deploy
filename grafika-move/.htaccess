@@ -1,0 +1,20 @@
+# PizuGrafika moved to https://pizu.pl/grafika/ — this folder only moves visitors there.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Every address goes to the new one, path and query kept (no ? in the target
+  # keeps the original query). $1 is relative to this folder, so the rules work
+  # in a subfolder. sw.js is served below; /.well-known/ stays for AutoSSL.
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
+  RewriteCond %{REQUEST_URI} !^/sw\.js$
+  RewriteRule ^(.*)$ https://pizu.pl/grafika/$1 [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # The retiring sw.js must be re-checked on every visit (browsers mostly skip
+  # the HTTP cache for sw.js anyway). No security headers here: the only page
+  # that stays is the service worker, and the hosting one level up sets its own.
+  <FilesMatch "^sw\.js$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>

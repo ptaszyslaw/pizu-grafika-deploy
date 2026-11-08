@@ -1,12 +1,12 @@
 {
-  "id": "/",
+  "id": "/grafika/",
   "name": "PizuGrafika",
   "short_name": "PizuGrafika",
   "description": "Darmowe narzędzia do zdjęć i grafiki działające w Twojej przeglądarce — bez wysyłania plików na serwer, także bez internetu.",
   "lang": "pl",
   "dir": "ltr",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/grafika/",
+  "scope": "/grafika/",
   "display": "standalone",
   "background_color": "#F7F7F8",
   "theme_color": "#EF4249",
@@ -17,19 +17,19 @@
   ],
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/grafika/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/grafika/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-maskable-512.png",
+      "src": "/grafika/icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -37,7 +37,7 @@
   ],
   "file_handlers": [
     {
-      "action": "/",
+      "action": "/grafika/",
       "accept": {
         "image/jpeg": [
           ".jpg",
@@ -70,7 +70,7 @@
     }
   ],
   "share_target": {
-    "action": "/udostepnij",
+    "action": "/grafika/udostepnij",
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {

@@ -2,38 +2,38 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <!-- every address (/, /kod-qr/, …) loads files from the site root — see lib/routes.ts -->
-    <base href="/" />
+    <!-- every address (/, /kod-qr/, …) loads files from the app base — see lib/routes.ts -->
+    <base href="/grafika/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; worker-src 'self' blob:; connect-src 'self'; base-uri 'self'; form-action 'none'"
     />
     <meta name="description" content="Utwórz kod QR do strony, Wi-Fi, e-maila, telefonu, SMS-a albo przelewu (standard ZBP). Kod statyczny — bez przekierowań, liczenia skanów i daty ważności. PNG lub SVG." />
-    <link rel="canonical" href="https://grafika.pizu.pl/kod-qr/" />
+    <link rel="canonical" href="https://pizu.pl/grafika/kod-qr/" />
     <!-- link previews: scripts/tool-pages.mjs sets og:title, og:description and og:url for every tool page;
          the image is shared (pizu-pl: scripts/og-image-tool.html → node scripts/og-image.mjs) -->
     <meta property="og:title" content="Generator kodów QR — darmowy, statyczny, także do przelewu | PizuGrafika" />
     <meta property="og:description" content="Utwórz kod QR do strony, Wi-Fi, e-maila, telefonu, SMS-a albo przelewu (standard ZBP). Kod statyczny — bez przekierowań, liczenia skanów i daty ważności. PNG lub SVG." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://grafika.pizu.pl/kod-qr/" />
+    <meta property="og:url" content="https://pizu.pl/grafika/kod-qr/" />
     <meta property="og:site_name" content="PizuGrafika" />
     <meta property="og:locale" content="pl_PL" />
-    <meta property="og:image" content="https://grafika.pizu.pl/og-image.png" />
+    <meta property="og:image" content="https://pizu.pl/grafika/og-image.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Ptak Pizu i napis: PizuGrafika — narzędzia, które nie wysyłają Twoich plików. Konwertuj, kadruj, kod QR." />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/grafika/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/grafika/apple-touch-icon.png" />
     <!-- applies saved theme / contrast / text size before the first paint -->
     <script src="./settings-init.js"></script>
     <title>Generator kodów QR — darmowy, statyczny, także do przelewu | PizuGrafika</title>
-    <script type="module" crossorigin src="/assets/index-Cd_SikdI.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-AID13YEX.css">
-    <script type="application/ld+json" data-page-schema>{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Utwórz kod QR","description":"Tworzysz kod QR, który zawiera dane bezpośrednio — nie przechodzi przez żaden serwer i nie przestanie działać. Pobierasz go jako PNG albo SVG.","applicationCategory":"MultimediaApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://grafika.pizu.pl/kod-qr/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy kod QR przestanie kiedyś działać?","acceptedAnswer":{"@type":"Answer","text":"Nie. To kod statyczny: zawiera dane bezpośrednio, bez przekierowania przez czyjś serwer. Wiele „darmowych” generatorów tworzy kody dynamiczne, które po czasie wygasają albo wymagają abonamentu."}},{"@type":"Question","name":"Jak zrobić kod QR do przelewu?","acceptedAnswer":{"@type":"Answer","text":"Wybierz „Przelew” i wpisz odbiorcę, numer rachunku, kwotę i tytuł. Kod jest zgodny z rekomendacją Związku Banków Polskich — przed wydrukiem zeskanuj go swoją aplikacją bankową."}},{"@type":"Question","name":"Czy udostępnię sieć Wi-Fi kodem QR?","acceptedAnswer":{"@type":"Answer","text":"Tak — po zeskanowaniu telefon zaproponuje połączenie z siecią bez przepisywania hasła."}},{"@type":"Question","name":"PNG czy SVG?","acceptedAnswer":{"@type":"Answer","text":"PNG do dokumentów i prezentacji, SVG do druku i na plakaty — jest ostry w każdym rozmiarze."}}]}]}</script>
+    <script type="module" crossorigin src="/grafika/assets/index-D9aJZU5B.js"></script>
+    <link rel="stylesheet" crossorigin href="/grafika/assets/index-AID13YEX.css">
+    <script type="application/ld+json" data-page-schema>{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Utwórz kod QR","description":"Tworzysz kod QR, który zawiera dane bezpośrednio — nie przechodzi przez żaden serwer i nie przestanie działać. Pobierasz go jako PNG albo SVG.","applicationCategory":"MultimediaApplication","operatingSystem":"Dowolny — działa w przeglądarce","offers":{"@type":"Offer","price":0,"priceCurrency":"PLN"},"url":"https://pizu.pl/grafika/kod-qr/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy kod QR przestanie kiedyś działać?","acceptedAnswer":{"@type":"Answer","text":"Nie. To kod statyczny: zawiera dane bezpośrednio, bez przekierowania przez czyjś serwer. Wiele „darmowych” generatorów tworzy kody dynamiczne, które po czasie wygasają albo wymagają abonamentu."}},{"@type":"Question","name":"Jak zrobić kod QR do przelewu?","acceptedAnswer":{"@type":"Answer","text":"Wybierz „Przelew” i wpisz odbiorcę, numer rachunku, kwotę i tytuł. Kod jest zgodny z rekomendacją Związku Banków Polskich — przed wydrukiem zeskanuj go swoją aplikacją bankową."}},{"@type":"Question","name":"Czy udostępnię sieć Wi-Fi kodem QR?","acceptedAnswer":{"@type":"Answer","text":"Tak — po zeskanowaniu telefon zaproponuje połączenie z siecią bez przepisywania hasła."}},{"@type":"Question","name":"PNG czy SVG?","acceptedAnswer":{"@type":"Answer","text":"PNG do dokumentów i prezentacji, SVG do druku i na plakaty — jest ostry w każdym rozmiarze."}}]}]}</script>
   </head>
   <body>
     <div id="root"><!-- static-page:start -->
@@ -52,8 +52,8 @@
     <h2 class="mt-8 text-lg font-bold text-ink">Pytania i odpowiedzi</h2>
     <dl class="mt-2 divide-y divide-gray-200"><div class="py-3"><dt class="font-semibold text-ink">Czy kod QR przestanie kiedyś działać?</dt><dd class="mt-1">Nie. To kod statyczny: zawiera dane bezpośrednio, bez przekierowania przez czyjś serwer. Wiele „darmowych” generatorów tworzy kody dynamiczne, które po czasie wygasają albo wymagają abonamentu.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Jak zrobić kod QR do przelewu?</dt><dd class="mt-1">Wybierz „Przelew” i wpisz odbiorcę, numer rachunku, kwotę i tytuł. Kod jest zgodny z rekomendacją Związku Banków Polskich — przed wydrukiem zeskanuj go swoją aplikacją bankową.</dd></div><div class="py-3"><dt class="font-semibold text-ink">Czy udostępnię sieć Wi-Fi kodem QR?</dt><dd class="mt-1">Tak — po zeskanowaniu telefon zaproponuje połączenie z siecią bez przepisywania hasła.</dd></div><div class="py-3"><dt class="font-semibold text-ink">PNG czy SVG?</dt><dd class="mt-1">PNG do dokumentów i prezentacji, SVG do druku i na plakaty — jest ostry w każdym rozmiarze.</dd></div></dl>
   </section></main>
-    <pizu-footer product="PizuGrafika" version="0.6.1"></pizu-footer>
+    <pizu-footer product="PizuGrafika" version="0.7.0"></pizu-footer>
   </div>
-<!-- static-page:end --></div>
+<!-- static-page:end --></div>
   </body>
 </html>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://grafika.pizu.pl/</loc>
+    <loc>https://pizu.pl/grafika/</loc>
   </url>
   <url>
-    <loc>https://grafika.pizu.pl/konwertuj-zdjecia/</loc>
+    <loc>https://pizu.pl/grafika/konwertuj-zdjecia/</loc>
   </url>
   <url>
-    <loc>https://grafika.pizu.pl/kadruj-zdjecie/</loc>
+    <loc>https://pizu.pl/grafika/kadruj-zdjecie/</loc>
   </url>
   <url>
-    <loc>https://grafika.pizu.pl/zaslon-i-znak-wodny/</loc>
+    <loc>https://pizu.pl/grafika/zaslon-i-znak-wodny/</loc>
   </url>
   <url>
-    <loc>https://grafika.pizu.pl/kod-qr/</loc>
+    <loc>https://pizu.pl/grafika/kod-qr/</loc>
   </url>
 </urlset>
